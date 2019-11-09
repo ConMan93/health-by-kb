@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/health-by-kb/static/css/main.b100e6da.chunk.css",
+    "main.js": "/health-by-kb/static/js/main.cddd2ca8.chunk.js",
+    "main.js.map": "/health-by-kb/static/js/main.cddd2ca8.chunk.js.map",
+    "runtime-main.js": "/health-by-kb/static/js/runtime-main.1fabab5a.js",
+    "runtime-main.js.map": "/health-by-kb/static/js/runtime-main.1fabab5a.js.map",
+    "static/js/2.a5ee1556.chunk.js": "/health-by-kb/static/js/2.a5ee1556.chunk.js",
+    "static/js/2.a5ee1556.chunk.js.map": "/health-by-kb/static/js/2.a5ee1556.chunk.js.map",
+    "index.html": "/health-by-kb/index.html",
+    "precache-manifest.aedc1725aa53928d40598c7ef9d9376f.js": "/health-by-kb/precache-manifest.aedc1725aa53928d40598c7ef9d9376f.js",
+    "service-worker.js": "/health-by-kb/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/health-by-kb/static/css/main.b100e6da.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fabab5a.js",
+    "static/js/2.a5ee1556.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.cddd2ca8.chunk.js"
+  ]
+}
