@@ -13,7 +13,7 @@ body {
   /* justify-content: center; */
   color: #CB2D6F;
   /* background-image: url('https://by3302files.storage.live.com/y4p451eRpD4585QvGs9H6_AoEn-P6jP4NR-bCEVqiWhpso-jvvkWOUzgUEINk8TrBYY3vHJcTEvsIGuj7LbHOqUsw2Ratcv6NyiMlacnkviNGEIA4I0PrXTXXH5VI3rBr0XVoXBy6OChHrZKlFk4711tZWBbhgJ_o3oigNGpll8GTFM9YZ9wz9bnci_JOM0uCmumd5LT_5UGQNZa-2aA2YdEmtd1jmOGAkAr_Z6K0jOF9E/IMG_0385.jpg?psid=1&width=698&height=430'); */
-  /* background-image: url('https://by3302files.storage.live.com/y4p9Zp-Te0-gyYHOOB_rgZ8_jmLU4dFBaXuwnLl-rqlVFP31EwVT0-L-kDOr-7lN56txZH1_jGtESGWljYTM3POlOz0oa5d0EKCIsBaUzG-m074sV_A0g5KTvlcB7w7FiBjxQUk1VBUr1g9XlKtiGu8e7bD-EhV4Ff4EwNbmDo4kedblJMomEGr_ks9XZgPR-eV5SFXe3FGKvgYz8XIO_8isloZDg0SnzZhgOm63pJwWtY/IMG_0384.jpg?psid=1&width=828&height=424'); */
+  background-image: url('https://by3302files.storage.live.com/y4p9Zp-Te0-gyYHOOB_rgZ8_jmLU4dFBaXuwnLl-rqlVFP31EwVT0-L-kDOr-7lN56txZH1_jGtESGWljYTM3POlOz0oa5d0EKCIsBaUzG-m074sV_A0g5KTvlcB7w7FiBjxQUk1VBUr1g9XlKtiGu8e7bD-EhV4Ff4EwNbmDo4kedblJMomEGr_ks9XZgPR-eV5SFXe3FGKvgYz8XIO_8isloZDg0SnzZhgOm63pJwWtY/IMG_0384.jpg?psid=1&width=828&height=424');
   /* background: rgb(255, 255, 255, 0.5); */
   background-size: cover;
   background-position: center;
@@ -24,7 +24,7 @@ body {
 .background-image {
   width: 100%;
   height: 100vh;
-  /* background-image: url('https://easyblogemily.com/wp-content/uploads/2019/01/If-You-Want-It-Work-For-It-Quote-Pinterest-.jpg'); */
+  background-image: url('https://easyblogemily.com/wp-content/uploads/2019/01/If-You-Want-It-Work-For-It-Quote-Pinterest-.jpg');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,11 +126,11 @@ body {
 }
 
 .facebook {
-  /* background-image: url('https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png'); */
+  background-image: url('https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png');
 }
 
 .instagram {
-  /* background-image: url('https://i.pinimg.com/originals/4f/01/49/4f0149647a160a47217615866f5469c4.png'); */
+  background-image: url('https://i.pinimg.com/originals/4f/01/49/4f0149647a160a47217615866f5469c4.png');
 }
 
 .post-image {
