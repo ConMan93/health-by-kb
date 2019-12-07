@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import { userLoggedIn } from '../Redux/reducer';
 import { withRouter } from 'react-router-dom';
 
+// Bootstrap Components
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 class SuprSkrtLogin extends Component {
 
     state = {
@@ -26,6 +30,7 @@ class SuprSkrtLogin extends Component {
     }
 
     loginUser = () => {
+        // console.log(this.state)
         axios.post('/auth/login', this.state).then(response => {
             this.props.userLoggedIn(response.data);
             this.props.history.push('/');
@@ -39,14 +44,19 @@ class SuprSkrtLogin extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Login</h1>
-                <p>Email</p>
-                <input placeholder='email' name='email' onChange={this.handleChange} value={this.state.email} />
-                <p>Password</p>
-                <input placeholder='password' name='password' type='password' onChange={this.handleChange} value={this.state.password} />
-                <button onClick={this.loginUser} >Login</button>
-            </div>
+            <Form className='form'>
+                <Form.Group controlId='formBasicEmail'>
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" onChange={this.handleChange} value={this.state.email} name='email' />
+                </Form.Group>
+
+                <Form.Group controlId='formBasicPassword'>
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="password" onKeyPress={this.handleKeyPress} onChange={this.handleChange} value={this.state.password} name='password' />
+                </Form.Group>
+
+                <Button variant="dark" onClick={this.loginUser} handleKeyPress={this.handleKeyPress}>Login</Button>
+            </Form>
         )
     }
 }

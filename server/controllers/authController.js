@@ -21,13 +21,19 @@ module.exports = {
 
             delete user.password;
             req.session.user = user;
-            console.log(user);
+            // console.log(user);
             return res.send(user);
         }
         catch (err) {
             console.log(error)
             return res.status(500).send(error);
         }
+    },
+
+    currentUser: async (req, res) => {
+
+        res.send(req.session.user)
+        
     }
     
 }

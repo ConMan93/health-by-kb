@@ -4,6 +4,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 const ac = require('./controllers/authController');
+const pc = require('./controllers/postController');
 const app = express();
 
 const { CONNECTION_STRING, SERVER_PORT, SESSION_SECRET } = process.env;
@@ -22,6 +23,15 @@ massive(CONNECTION_STRING).then( db => {
 
 // Authorization endpoints
 app.post('/auth/login', ac.login);
+app.get('/auth/currentuser', ac.currentUser);
+
+// Blog post endpoints
+app.post('/post/create', pc.createNewPost);
+app.get('/post/exercises', pc.getExercisePosts);
+app.get(`/post/recipes`, pc.getRecipePosts);
+app.delete('/post/:id/:page', pc.deletePost);
+app.get('/post/blog', pc.getBlogPosts);
+app.get('/post/motivation', pc.getMotivationPosts);
 
 app.listen(SERVER_PORT, () => {
     console.log(`Listening on port ${SERVER_PORT}`)

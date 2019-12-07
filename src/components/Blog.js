@@ -3,14 +3,14 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import FormatPost from './FormatPost';
 
-class Exercises extends Component {
+class Blog extends Component {
 
     state = {
         posts: [],
     }
 
     componentDidMount = () => {
-        axios.get('/post/exercises').then(response => {
+        axios.get('/post/blog').then(response => {
             this.setState({
                 posts: response.data
             })
@@ -55,4 +55,4 @@ function mapStateToProps (state) {
     }
 }
 
-export default connect(mapStateToProps, null)(Exercises);
+export default connect(mapStateToProps, null)(Blog);

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
-// import Header from './Header';
 
 class Home extends Component {
     render() {
         return (
-            <div>
-                {/* <Header /> */}
-                <h1>Placeholder Content</h1>
+            <div className="home-page-slogan">
+                <h1>Health By KB</h1>
+                <p>Creating Simple Healthy Lifestyles</p>
             </div>
         )
     }

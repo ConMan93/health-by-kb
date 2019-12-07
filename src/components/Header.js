@@ -1,21 +1,46 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export default class Header extends Component {
+// Styling component
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
+class Header extends Component {
     render() {
         return (
-            <div>
-                <div>
-                    <p>Health by KB</p>
-                </div>
-                <div>
-                    <ul>
-                        <li><Link to='/' >Home</Link> </li>
-                        <li><Link to='/exercises' >Exercises</Link></li>
-                        <li><Link to='/recipes' >Recipes</Link> </li>
-                    </ul>
-                </div>
-            </div>
+            <Navbar variant='dark'  className="nav-bar" >
+                <Navbar.Brand className="justify-content-start"  >
+                    <Link to='/'>Health by KB</Link>
+                </Navbar.Brand>
+
+                <Nav fill variant='pills' defaultActiveKey="/" className='nav-bar-links' >
+                    <Nav.Item>
+                        <Nav.Link eventKey='link-1' ><Link to='/exercises' >Exercises</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="link-2"><Link to='/recipes' >Healthy Recipes</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="link-3"><Link to='/motivations' >Motivation</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="link-4" ><Link to='/blogs' >Blog</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="link-5" ><Link to='/about' >About Me</Link></Nav.Link>
+                    </Nav.Item>
+                    {this.props.user.permissions === 'ADMIN' && <Nav.Item><Nav.Link eventKey="link-6" ><Link to='/post' >Post</Link></Nav.Link></Nav.Item>}
+                </Nav>
+            </Navbar>
         )
     }
 }
+
+function mapStateToProps (state) {
+    return {
+        user: state.user
+    }
+}
+
+export default connect(mapStateToProps, null)(Header);

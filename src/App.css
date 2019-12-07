@@ -1,22 +1,142 @@
-.App {
-  text-align: center;
+
+body {
+  /* background: #fffeea; */
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-page-slogan {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: center; */
+  color: #CB2D6F;
+  /* background-image: url('https://by3302files.storage.live.com/y4p451eRpD4585QvGs9H6_AoEn-P6jP4NR-bCEVqiWhpso-jvvkWOUzgUEINk8TrBYY3vHJcTEvsIGuj7LbHOqUsw2Ratcv6NyiMlacnkviNGEIA4I0PrXTXXH5VI3rBr0XVoXBy6OChHrZKlFk4711tZWBbhgJ_o3oigNGpll8GTFM9YZ9wz9bnci_JOM0uCmumd5LT_5UGQNZa-2aA2YdEmtd1jmOGAkAr_Z6K0jOF9E/IMG_0385.jpg?psid=1&width=698&height=430'); */
+  background-image: url('https://by3302files.storage.live.com/y4p9Zp-Te0-gyYHOOB_rgZ8_jmLU4dFBaXuwnLl-rqlVFP31EwVT0-L-kDOr-7lN56txZH1_jGtESGWljYTM3POlOz0oa5d0EKCIsBaUzG-m074sV_A0g5KTvlcB7w7FiBjxQUk1VBUr1g9XlKtiGu8e7bD-EhV4Ff4EwNbmDo4kedblJMomEGr_ks9XZgPR-eV5SFXe3FGKvgYz8XIO_8isloZDg0SnzZhgOm63pJwWtY/IMG_0384.jpg?psid=1&width=828&height=424');
+  /* background: rgb(255, 255, 255, 0.5); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background: white; */
+}
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://easyblogemily.com/wp-content/uploads/2019/01/If-You-Want-It-Work-For-It-Quote-Pinterest-.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+}
+
+.home-page-slogan h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  /* color: ; */
+}
+
+.home-page-slogan p {
+  font-size: 2rem;
+  font-weight: 700;
+  /* color: black; */
+}
+
+.nav-bar {
+  background: black;
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  color: #CB2D6F;
+}
+
+.nav-bar-links {
+  margin: 0 34% 0 14%;
+}
+
+.nav-pills .nav-link.active, .nav-link.active a {
+  background-color: #CB2D6F;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.post-container {
+  background: #CB2D6F;
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  width: 38rem;
+}
+
+.post-container button {
+  width: 16%;
+}
+
+.form {
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.form-buttons {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 25px;
+  align-items: center;
+  /* border: 1px solid black; */
+  /* background: #CB2D6F; */
+  border-radius: 4px;
+  padding: 15px;
+  /* box-shadow: black 1px 1px 1px; */
+}
+
+.about-me-content {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  /* color: white; */
+}
+
+.social-links {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-links a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.facebook {
+  background-image: url('https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png');
+}
+
+.instagram {
+  background-image: url('https://i.pinimg.com/originals/4f/01/49/4f0149647a160a47217615866f5469c4.png');
+}
+
+.post-image {
+  max-height: 500px;
+}
+
+.post-textarea {
+  white-space: pre-line;
 }
