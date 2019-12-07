@@ -3,11 +3,17 @@ const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const massive = require('massive');
+const path = require('path');
 const ac = require('./controllers/authController');
 const pc = require('./controllers/postController');
 const app = express();
 
 const { CONNECTION_STRING, SERVER_PORT, SESSION_SECRET } = process.env;
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/*', function (req, res) {
+   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.use(bodyParser.json());
 app.use(session({
