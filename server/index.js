@@ -11,7 +11,7 @@ const app = express();
 const { CONNECTION_STRING, SERVER_PORT, SESSION_SECRET } = process.env;
 
 app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
+    res.sendFile(path.join(`${__dirname}/../build`));
 });
 
 app.use(bodyParser.json());
